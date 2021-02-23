@@ -1,0 +1,43 @@
+{{!-- Este es un comentario no aparece en el html final --}}
+{{!--  define que master page va a utilizar en este es layoute/basic --}}
+{{#> layouts/basic page_title="Inicio"}}
+  {{!-- el #*inline "nombre de bloque"
+    define donde incorporar en el layout el codigo siguiente
+   --}}
+  {{#*inline "main-block"}}
+<!-- <section class="p-8 relative">
+      {{!-- todas las imagenes deben estar en img_src y referenciadas con imgs/imagen.ext --}}
+      <img alt="cat gourmet" src="imgs/w2.jpg"  class="p-8"/>
+      <h1 class="absolute object-right-bottom">Start Coding</h1>
+    </section>-->
+   
+   
+  <section class="visible md:hidden mx-10">
+
+     {{#> cards/cards card_price="L100,000.00" card_button="Comprar"cards_img="imgs/w1.jpg" card_title="Reloj Rolex Submariner" card_text="Fiel a la 
+   estética histórica del modelo, el nuevo Submariner, en acero Oystersteel, viste de negro su esfera y su bisel giratorio con disco Cerachrom.
+   La modalidad en versión Rolesor amarillo (combinación de acero Oystersteel y oro amarillo de 18 quilates del Submariner Date combina, por su parte,
+   una esfera azul real y un bisel giratorio con disco Cerachrom azul."}}{{/cards/cards}}
+
+
+  </section>
+
+   <section class=" invisible md:visible">
+     
+
+    <section class="flex justify-between">
+        {{#> grid/grid img1="imgs/w1.jpg" grid_title="DETALLE DEL PRODUCTO" grid_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}}{{/grid/grid}}
+    </section>
+    <section class="p-10 grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-5">
+        {{#> cards/cards1 imgs="imgs/img2.jpeg" card_title="RECOMENDADO N1" card_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}} {{/cards/cards1}}
+        {{#> cards/cards1 imgs="imgs/img3.jpeg" card_title="RECOMENDADO N2" card_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}} {{/cards/cards1}}
+        {{#> cards/cards1 imgs="imgs/img4.jpeg" card_title="RECOMENDADO N3" card_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}} {{/cards/cards1}}
+        {{#> cards/cards1 imgs="imgs/img5.jpeg" card_title="RECOMENDADO N2" card_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}} {{/cards/cards1}}
+        {{#> cards/cards1 imgs="imgs/img6.jpeg" card_title="RECOMENDADO N3" card_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}} {{/cards/cards1}}
+
+    </section> 
+
+   </section>
+
+  {{/inline}}
+{{/layouts/basic}}
